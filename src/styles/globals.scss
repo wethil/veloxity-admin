@@ -1,0 +1,75 @@
+@import './vars.scss';
+@import './cards.scss';
+@import './sidebar.scss';
+@import './nav.scss';
+
+body {
+	background-color: $globalBackgroundColor;
+	font-family: $globalFontFamily;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+hr {
+	border-color: $hrColor;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#page-content {
+  width: 100%;
+  position: relative;
+  margin-left: $sidebarWidth;
+
+  &.has-alert {
+    margin-top: 48px;
+  }
+}
+#primary-content {
+  padding: $pageContentPadding;
+}
+.page-container {
+  width: 100%;
+  margin: auto;
+  max-width: 1170px;
+}
+.app-body {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+
+
+
+// Responsive
+
+//collapsed side menu
+@media screen and (min-width: $breakPointSm) {
+  .side-menu-collapsed {
+    #page-content {
+      margin-left: 50px;
+    }
+  }
+}
+@media screen and (max-width: $breakPointSm) {
+  #page-content {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: $breakPointXs) {
+  #page-content {
+    margin-top: 50px;
+  }
+}
+
+.lang-button{
+  margin-left: 2%;
+}
