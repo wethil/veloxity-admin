@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../styles/globals.scss';
+
+
+.pull-right {
+  float: right;
+}
+
+
+.container-fluid {
+  margin-top:2%;
+  // margin: 2% 2% !important;
+}
