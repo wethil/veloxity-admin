@@ -12,7 +12,7 @@
     "@google-cloud/promisify": "^2.0.0",
     "glob": "^7.1.6",
     "global": "^4.4.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "yeoman-generator": "^4.9.0",
     "yo": "^3.1.1"
   }
